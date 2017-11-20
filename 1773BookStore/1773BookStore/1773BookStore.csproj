@@ -194,7 +194,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711201828362_init_Database.cs" />
+    <Compile Include="Migrations\201711201828362_init_Database.Designer.cs">
+      <DependentUpon>201711201828362_init_Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711201835087_init_dbtables.cs" />
+    <Compile Include="Migrations\201711201835087_init_dbtables.Designer.cs">
+      <DependentUpon>201711201835087_init_dbtables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Data\Address.cs" />
+    <Compile Include="Models\Data\Author.cs" />
+    <Compile Include="Models\Data\Book.cs" />
+    <Compile Include="Models\Data\BookType.cs" />
+    <Compile Include="Models\Data\Book_Author_Mapping.cs" />
+    <Compile Include="Models\Data\Book_BookType_Mapping.cs" />
+    <Compile Include="Models\Data\CreditCard.cs" />
+    <Compile Include="Models\Data\Order.cs" />
+    <Compile Include="Models\Data\OrderItem.cs" />
+    <Compile Include="Models\Data\Publisher.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -275,6 +295,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201711201828362_init_Database.resx">
+      <DependentUpon>201711201828362_init_Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711201835087_init_dbtables.resx">
+      <DependentUpon>201711201835087_init_dbtables.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
